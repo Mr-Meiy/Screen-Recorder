@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./screen.css">
+    <link rel = "icon" href ="./record.jfif" type = "image/x-icon"> 
+    <title>Screen Recorder</title>
+</head>
+<body>
+    <div class="container-fluid bg-dark">
+		<h2 class="text-center text-light p-3">Screen Recorder</h2>
+	</div>
+	<div class="container">
+		<br>
+		<div id="message" class="border border-primary rounded p-4" width="70%" height="50%">
+			<h4>INSTRUCTIONS:</h4>
+			<ol>
+				<li>Click on the <strong class="text-success font-italic">Start Capture</strong> button to initiate recording process.</li>
+				<li>Click on the tab which is to be recorded appeared as popup.</li>
+				<li>Click on the <strong class="text-success font-italic">Start</strong> button to start Recording. </li>
+				<li>Click on the <strong class="text-danger font-italic">Stop Capture</strong> button to stop Recording. </li>
+				<li>Finally watch the preview video.</li>
+				<li>Click <strong class="text-warning font-italic">Download</strong> button download the video. </li>
+			</ol>
+		</div>
+		<div class="video">
+			<video id="video" width="70%" height="50%" hidden controls autoplay></video>
+		</div>
+		<div class="text-center">
+			<button class="btn btn-sm btn-success" id="start">Start Capture</button>
+			&nbsp;
+			<button class="btn btn-sm btn-danger" id="stop" hidden>Stop Capture</button>
+			&nbsp;
+			<a href="" class="btn btn-sm btn-warning" id="download" download hidden>Download</a>
+		</div>
+	</div>
+	<div class="footer container-fluid bg-dark">
+		<p class="text-left text-muted py-1">&#169; Copyright 2021. A product of Meiy - All right reserved</p>
+	</div>
+	<script type="text/javascript" src="./recorder.js"></script>
+</body>
+</html>
